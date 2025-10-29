@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineer Portfolio</title>
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the Inter font and smooth scrolling */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light gray background */
+            scroll-behavior: smooth;
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #0d9488; /* Teal color for underline */
+            border-radius: 9999px;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold text-[#0d9488]">
+                Chris Maria Antony
+            </div>
+            <nav class="space-x-4 hidden md:block">
+                <a href="#about" class="text-gray-600 hover:text-[#0d9488] transition duration-150">About</a>
+                <a href="#skills" class="text-gray-600 hover:text-[#0d9488] transition duration-150">Skills</a>
+                <a href="#projects" class="text-gray-600 hover:text-[#0d9488] transition duration-150">Projects</a>
+                <a href="#contact" class="text-gray-600 hover:text-[#0d9488] transition duration-150">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-gray-50 py-20 sm:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl text-gray-500 font-bold">
+                CA
+            </div>
+            <h1 class="text-5xl sm:text-7xl font-extrabold text-gray-900 leading-tight">
+                Chris Maria Antony
+            </h1>
+            <p class="text-2xl mt-4 font-light text-gray-600">
+                Full Stack Software Engineer | C# | .NET | React | Angular
+            </p>
+            <a href="#contact" class="mt-8 inline-block bg-[#0d9488] hover:bg-[#0f766e] text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition duration-300 transform hover:scale-105">
+                Get In Touch
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold section-title text-gray-900">About Me</h2>
+            <div class="text-lg text-gray-700 space-y-4">
+                <p>With over 7 years of professional experience, I specialize in designing and delivering high-performance, scalable web and desktop applications. My expertise is rooted in strong software engineering fundamentals, including OOD, OOP, and deep knowledge of data structures and algorithms.</p>
+                <p>I focus primarily on the <b>C# / .NET</b>  ecosystem, utilizing frameworks like .NET Core and Web API for robust, low-latency backend services. I possess significant practical experience with <b>multithreading</b>  (TPL, asynchronous computations) to ensure speed and responsiveness in complex scenarios.</p>
+                <p>My full-stack capability is defined by modern frontend excellence using both <b>React</b>  and the latest versions of <b>Angular</b>  . For state management and data fetching, I leverage advanced tools like <b>React Query</b>  (for React) and <b>NgRx</b>  combined with <b>RxJS</b>  (for Angular), ensuring highly efficient, reactive user interfaces.</p>
+                <p>This is coupled with efficient data management via SQL Server, Entity Framework, and Dapper. I thrive in fast-paced environments, prioritizing clean, maintainable code, optimal performance, and delivering maximum customer value.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 sm:py-24 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold section-title text-gray-900">Core Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                
+                <!-- Skill Card -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-[#0d9488]">
+                    <h3 class="font-bold text-xl mb-2 text-gray-900">Backend & Core</h3>
+                    <ul class="text-sm text-gray-600 list-disc list-inside space-y-1">
+                        <li>C# / .NET Core / .NET 8</li>
+                        <li>Multithreading (TPL)</li>
+                        <li>Web API / REST</li>
+                        <li>OOD / OOP / SOLID</li>
+                    </ul>
+                </div>
+                
+                <!-- Skill Card -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-[#0d9488]">
+                    <h3 class="font-bold text-xl mb-2 text-gray-900">Frontend</h3>
+                    <ul class="text-sm text-gray-600 list-disc list-inside space-y-1">
+                        <li>React (Hooks, Redux)</li>
+                        <li>Angular (RxJS, NgRx)</li>
+                        <li>JavaScript / TypeScript</li>
+                        <li>Tailwind CSS / HTML5</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Card -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-[#0d9488]">
+                    <h3 class="font-bold text-xl mb-2 text-gray-900">Data & DB</h3>
+                    <ul class="text-sm text-gray-600 list-disc list-inside space-y-1">
+                        <li>SQL Server</li>
+                        <li>Entity Framework Core</li>
+                        <li>Dapper / LINQ</li>
+                        <li>Relational Design</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Card -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-[#0d9488]">
+                    <h3 class="font-bold text-xl mb-2 text-gray-900">Tools & DevOps</h3>
+                    <ul class="text-sm text-gray-600 list-disc list-inside space-y-1">
+                        <li>Git / Azure DevOps</li>
+                        <li>Jira / Agile</li>
+                        <li>xUnit / Jest (Testing)</li>
+                        <li>Swagger / OpenAPI / Postman</li>
+                        <li>Algorithms & DS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section
+    <section id="projects" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold section-title text-gray-900">Selected Projects</h2>
+            
+            <div class="space-y-12">
+                <!-- Project 1
+                <div class="p-6 border border-gray-200 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-semibold text-[#0d9488] mb-2">Real-Time Data Dashboard</h3>
+                    <p class="text-gray-700 mb-4">Developed a high-throughput, low-latency dashboard using <b>.NET Core Web API</b>  and <b>React</b>. Utilized SignalR for real-time data push, handling over 10,000 transactions per second efficiently.</p>
+                    <span class="text-sm font-medium text-gray-500">Tech Stack: C#, .NET Core, SignalR, React, SQL Server</span>
+                </div>
+                
+                Project 2
+                <div class="p-6 border border-gray-200 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-semibold text-[#0d9488] mb-2">Asynchronous Processing Engine</h3>
+                    <p class="text-gray-700 mb-4">Designed a multi-threaded batch processing engine using <b>TPL</b>  in C# to improve data ingestion speed by 40%. Implemented effective cancellation tokens and exception handling.</p>
+                    <span class="text-sm font-medium text-gray-500">Tech Stack: C#, Multithreading, TPL, Entity Framework, Azure Storage</span>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-lg text-gray-600">More projects and detailed case studies available upon request.</p>
+            </div>
+        </div>
+    </section> -->
+
+        <!-- Work Experience Section -->
+    <section id="projects" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold section-title text-gray-900">Work Experience</h2>
+            
+            <div class="space-y-12">
+                
+                <!-- Job 1: Neudesic Technologies -->
+                <div class="p-6 border border-gray-200 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-[#0d9488] mb-1">Consultant II - Neudesic Technologies Private Limited (an IBM Company)</h3>
+                    <p class="text-sm text-gray-500 mb-4">India | 29/01/2024 – Current</p>
+                    <ul class="text-gray-700 space-y-3 list-disc pl-5">
+                        <li>Drove scalability and testability by implementing <b>Clean Architecture</b>  and the <b>Mediator pattern (MediatR)</b>  to decouple business logic, while using the <b>BFF (Backend-for-Frontend)</b>  architecture to tailor API payloads and optimize client-side performance.</li>
+                        <li>Drove code quality and modularity across the stack by creating Custom Middleware and utility functions in Class Libraries on the backend, while leading <b>Micro Frontend</b>  implementation using <b>Module Federation</b>  for independent UI deployment and flexibility.</li>
+                        <li>Developed modern interfaces using <b>React</b>  with the <b>React Query (TanStack Query)</b>  library for advanced server-state management, caching, and background synchronisation, and focused on modern styling by integrating <b>Tailwind CSS</b>  and leveraging component libraries like PrimeNG, Material UI, and Kendo UI for enterprise-grade feature development.</li>
+                        <li>Accelerated development and ensured comprehensive coverage by leveraging <b>GitHub Copilot</b>  across Visual Studio and VS Code to quickly scaffold and generate boilerplate unit tests, including <b>xUnit</b>  tests with WireMock for efficient service mocking.</li>
+                        <li>Implemented <b>Azure Functions</b>  for serverless, event-driven tasks and leveraged <b>Azure Data Lake</b>  for big data storage, monitored by Azure Monitor for health checks and performance insights.</li>
+                        <li>Optimised complex data operations by creating advanced SQL objects like <b>CTEs</b>  (Common Table Expressions) and tuning database performance through strategic <b>Indexing and Clustering</b>  adjustments.</li>
+                        <li>Ensured code quality, team efficiency, and adherence to best practices by utilising <b>GitHub</b>  for version control, conducting detailed code reviews, and providing mentorship to junior developers, all managed via Azure Boards/Confluence within a high-velocity <b>Agile</b>  environment.</li>
+                    </ul>
+                </div>
+                
+                <!-- Job 2: UST -->
+                <div class="p-6 border border-gray-200 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-[#0d9488] mb-1">Developer III Software Engineer - UST</h3>
+                    <p class="text-sm text-gray-500 mb-4">India | 03/05/2022 – 28/01/2024</p>
+                    <ul class="text-gray-700 space-y-3 list-disc pl-5">
+                        <li>Developed high-performance <b>React 18 SPAs</b>  using Functional Components and Hooks, managing complex state and asynchronous data flows via <b>Redux and Redux Saga</b>  to ensure predictable updates, and integrating data using <b>GraphQL</b>  to optimize network usage.</li>
+                        <li>Successfully led the upgrading of <b>Angular versions</b>  (e.g., from v13 to v16), implementing modern features like <b>standalone components</b>  (post-v14) to reduce module complexity and integrated third-party identity providers to implement secure authentication flows using <b>OAuth and OpenID Connect</b>.</li>
+                        <li>Enhanced developer velocity and code quality through the practical application of <b>AI-assisted coding tools (GitHub Copilot)</b>, using them for code generation, complex refactoring, and troubleshooting activities.</li>
+                        <li>Significantly optimized application performance and reduced database load by utilizing <b>Redis Cache</b>  for distributed caching, integrating <b>Elasticsearch</b>  for high-speed full-text search, and employing the <b>Dapper</b>  micro-ORM for rapid, direct SQL access in critical areas.</li>
+                        <li>Gained hands-on experience with core <b>AWS services</b>, including DynamoDB (NoSQL data modeling), and SQS/SNS for building decoupled, event-driven communication between microservices.</li>
+                    </ul>
+                </div>
+                
+                <!-- Job 3: Tata Consultancy Services -->
+                <div class="p-6 border border-gray-200 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-[#0d9488] mb-1">Systems Engineer - Tata Consultancy Services</h3>
+                    <p class="text-sm text-gray-500 mb-4">India | 14/06/2018 – 30/04/2022</p>
+                    <ul class="text-gray-700 space-y-3 list-disc pl-5">
+                        <li>Built foundational <b>RESTful Web APIs</b>  and backend services using <b>.NET Core and C#</b>, applying <b>OOP and SOLID principles</b>  for maintainability while leveraging <b>Entity Framework Core (EF Core)</b>  for efficient data access and querying.</li>
+                        <li>Developed <b>SQL Stored Procedures and Functions</b>  to enforce transactional business rules and guarantee data integrity.</li>
+                        <li>Developed and maintained <b>Angular</b>  web applications (v7-v13) using a modular and template-driven approach, ensuring code reliability by performing comprehensive <b>unit testing</b>  on components and services using <b>Jest and Jasmine/Karma</b>.</li>
+                        <li>Utilised HTML5, CSS3, and <b>Bootstrap</b>  to create responsive and consistent user interfaces across the application suite.</li>
+                        <li>Proficiently managed the <b>Agile lifecycle</b>—from participating in all ceremonies (Scrum, planning, retrospectives) to using <b>Azure Boards</b>  for transparently tracking tasks and ensuring product goal alignment.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-lg text-gray-600">References and detailed project artifacts available upon request.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 sm:py-24 bg-[#0d9488]">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-white text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Contact Me</h2>
+            <p class="text-xl mb-8">Let's build something great together. Feel free to reach out!</p>
+            
+            <div class="space-y-3">
+                <p class="text-lg"><strong>Email:</strong> <a href="mailto:chrismariantony@gmail.com">chrismariantony@gmail.com</a></p> 
+                <p class="text-lg"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/chris-maria-antony-03913a13a/">https://www.linkedin.com/in/chris-maria-antony-03913a13a/</a></p>
+                <p class="text-lg"><strong>GitHub:</strong> <a href="https://github.com/ChrisMariaAntony">https://github.com/ChrisMariaAntony</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-center py-4 text-gray-400 text-sm">
+        &copy; 2024 Chris Maria Antony. Built with Tailwind CSS.
+    </footer>
+
+</body>
+</html>
